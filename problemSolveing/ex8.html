@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="pera"></p>
+    <script>
+        //input a rendom number 1 to 10 and check that its match or not
+        //if matched then show Good work otherwise Don't match
+        let pera=document.getElementById('pera');
+
+        let number =Math.floor(Math.random()*10);
+        
+        console.log(number);
+        let pro=prompt('Enter a number : ')
+       if(number==pro){
+        pera.innerHTML='Good Work';
+       }
+       else{
+           pera.textContent="Don't Match";
+       }
+    </script>
+</body>
+</html>

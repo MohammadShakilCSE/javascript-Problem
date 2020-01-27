@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+        <label id="first-one">1st Number</label>
+        <input id="first-two" type="text" >
+    </div>
+    <div id="sec">
+        <label id="sec-one">2nd Number</label>
+        <input id="sec-two" type="text" >
+    </div>
+    <button id="mul">Multiplication</button>
+    <button id="div">Division</button>
+    <div>
+        <p>The result is : <span id="result"></span></p>
+    </div>
+
+    <script>
+        /*
+         Calculate multiplication and division of two numbers
+        */
+       function multiplyBy()
+        {
+            num1 = document.getElementById("first-two").value;
+            num2 = document.getElementById("sec-two").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divideBy() 
+        { 
+            num1 = document.getElementById("first-two").value;
+            num2 = document.getElementById("sec-two").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+        document.getElementById("mul").addEventListener('click',multiplyBy);
+        document.getElementById("div").addEventListener('click',divideBy);
+    </script>
+</body>
+</html>
